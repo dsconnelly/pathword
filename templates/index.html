@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <title>pathword</title>
+
+        <script src="../static/js/jquery-3.6.0.min.js"></script>
+        <script src="../static/js/index.js"></script>
+    </head>
+    <body>
+
+        <p>
+            The goal is to find a chain of four-letter words from the start
+            word to the end word, where each word in the chain differs from
+            its predecessor by only one letter.
+        </p>
+
+        <p>
+            The start word is <span id="start">{{ start }}</span>, and the end
+            word is <span id="end">{{ end }}</span>. Your guesses so far:
+        </p>
+
+        <div id="chain">
+
+        </div>
+
+        <div id="form">
+            <input type="text" id="guess" placeholder="guess a new word">
+            <input type="button" id="submit" value="submit">
+            <input type="button" id="undo" value="undo">
+            <input type="button" id="forfeit" value="give up?">
+        </div>
+    </body>
+</html>

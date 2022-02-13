@@ -34,6 +34,7 @@ function handleGuess() {
 
                 if (next == end) {
                     $("#form").html("You won!");
+                    showPath();
                 }
             } else {
                 alert(response.message);
@@ -65,8 +66,8 @@ function showPath() {
                 }
             }
 
-            content = content + ".</p>";
-            $("#form").html(content);
+            content = content + ". Refresh for a new game.</p>";
+            $("#path").html(content);
         }, error: serverError
     });
 }
